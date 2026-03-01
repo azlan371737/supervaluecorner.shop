@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuperValueCorner.shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#0E0E10;
+    --card:#1A1A1D;
+    --gold:#D4AF37;
+    --light:#F5F5F5;
+    --gray:#A1A1AA;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--light);
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.6);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:var(--gold);
+}
+
+nav a{
+    color:var(--light);
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px 10%;
+    background:linear-gradient(135deg,#111111,#1c1c1f);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:var(--gold);
+}
+
+.hero p{
+    color:var(--gray);
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 30px;
+    background:var(--gold);
+    border:none;
+    color:black;
+    font-weight:600;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* PRODUCTS */
+.products{
+    padding:60px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(212,175,55,0.3);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.price{
+    color:var(--gold);
+    font-weight:600;
+    margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    padding:60px 8% 20px;
+    margin-top:60px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-col h3,
+.footer-col h4{
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+.footer-col p{
+    font-size:14px;
+    color:var(--gray);
+    line-height:1.6;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    text-decoration:none;
+    color:var(--gray);
+    font-size:14px;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:var(--gold);
+}
+
+.newsletter{
+    display:flex;
+    margin-top:10px;
+}
+
+.newsletter input{
+    padding:10px;
+    border:none;
+    outline:none;
+    width:100%;
+    border-radius:5px 0 0 5px;
+}
+
+.newsletter button{
+    padding:10px 15px;
+    border:none;
+    background:var(--gold);
+    font-weight:600;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #222;
+    margin-top:40px;
+    padding-top:20px;
+    font-size:14px;
+    color:var(--gray);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SuperValueCorner</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Smart Shopping <span>Starts Here</span></h1>
+    <p>Premium quality products at unbeatable prices delivered to your doorstep.</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Wireless Headphones</h3>
+            <div class="price">$49.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Smart Watch</h3>
+            <div class="price">$79.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Portable Speaker</h3>
+            <div class="price">$39.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>SuperValueCorner</h3>
+            <p>SuperValueCorner.shop is your trusted online destination for quality electronics,
+            fashion, and everyday essentials at affordable prices. We focus on value, reliability,
+            and customer satisfaction.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customer Support</h4>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe for exclusive discounts and updates.
+
+
+
+<a href="http://565751.shop/">565751.shop</a>
+<a href="http://565752.shop/">565752.shop</a>
+<a href="http://565753.shop/">565753.shop</a>
+<a href="http://565754.shop/">565754.shop</a>
+<a href="http://565755.shop/">565755.shop</a>
+<a href="http://565756.shop/">565756.shop</a>
+<a href="http://565757.shop/">565757.shop</a>
+<a href="http://565758.shop/">565758.shop</a>
+<a href="http://565759.shop/">565759.shop</a>
+<a href="http://565760.shop/">565760.shop</a>
+<a href=""></a
+
+
+
+            </p>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 SuperValueCorner.shop | All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>
